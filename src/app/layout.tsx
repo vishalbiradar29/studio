@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -40,6 +40,7 @@ export default function RootLayout({
           fontInter.variable,
           fontPlayfairDisplay.variable
         )}
+        suppressHydrationWarning={true}
       >
         {children}
         <Toaster />
