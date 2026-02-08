@@ -1,5 +1,6 @@
 import { Footer } from '@/components/layout/footer';
 import { Header } from '@/components/layout/header';
+import { DisclaimerModal } from '@/components/disclaimer-modal';
 
 type PublicLayoutProps = {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ export function PublicLayout({ children }: PublicLayoutProps) {
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <DisclaimerModal />
     </div>
   );
 }
