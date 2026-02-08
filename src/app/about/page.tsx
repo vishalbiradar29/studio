@@ -1,6 +1,7 @@
+
 import Image from 'next/image';
 import { PublicLayout } from '@/components/layout/public-layout';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Gavel, Landmark, Scale, GraduationCap, Briefcase } from 'lucide-react';
 import { WhatsAppButton } from '@/components/whatsapp-button';
