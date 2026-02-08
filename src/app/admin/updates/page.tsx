@@ -59,7 +59,7 @@ export default function ManageUpdatesPage() {
             {updates.map((update: CaseUpdate) => (
               <TableRow key={update.id}>
                 <TableCell className="font-medium">{update.title}</TableCell>
-                <TableCell>{new Date(update.date).toLocaleDateString()}</TableCell>
+                <TableCell>{new Date(update.date).toLocaleDateString('en-US')}</TableCell>
                 <TableCell className="text-right">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
