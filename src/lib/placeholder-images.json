@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A professional setting of a lawyer's office or a courthouse.",
+      "imageUrl": "https://images.unsplash.com/photo-1559510881-58b92ab35929?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXd5ZXIlMjBvZmZpY2V8ZW58MHx8fHwxNzcwNTgzNDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lawyer office"
+    },
+    {
+      "id": "about-advocate",
+      "description": "A professional headshot of the advocate.",
+      "imageUrl": "https://images.unsplash.com/photo-1579168064425-7a8f8ef3f1ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXd5ZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzA0ODQ2NDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lawyer portrait"
+    },
+    {
+      "id": "office-photo-1",
+      "description": "Photo of the lawyer's office interior, perhaps a waiting area.",
+      "imageUrl": "https://images.unsplash.com/photo-1587702068694-a909ef4aa346?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxvZmZpY2UlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzA1Mzg1NzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office interior"
+    },
+    {
+      "id": "office-photo-2",
+      "description": "Photo of a bookshelf filled with law books.",
+      "imageUrl": "https://images.unsplash.com/photo-1575282343536-469af953c6e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsYXclMjBib29rc3xlbnwwfHx8fDE3NzA1ODA4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "law books"
+    },
+    {
+      "id": "office-photo-3",
+      "description": "Photo of the advocate's personal cabin or desk.",
+      "imageUrl": "https://images.unsplash.com/photo-1437419764061-2473afe69fc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZXNrfGVufDB8fHx8MTc3MDU4MzQyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desk"
+    },
+    {
+      "id": "office-photo-4",
+      "description": "Photo of the building exterior or a nameplate.",
+      "imageUrl": "https://images.unsplash.com/photo-1651269424052-e11edb68c2b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b2ZmaWNlJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzcwNTgzNDI3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office exterior"
+    },
+    {
+      "id": "update-image-1",
+      "description": "An abstract image related to a legal case update.",
+      "imageUrl": "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsZWdhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc3MDU1NTAwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "legal document"
+    },
+    {
+      "id": "update-image-2",
+      "description": "Another abstract image for a case update.",
+      "imageUrl": "https://images.unsplash.com/photo-1674318111856-1a20412c0daa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb3VydGhvdXNlJTIwc3RlcHN8ZW58MHx8fHwxNzcwNTgzNDI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "courthouse steps"
+    },
+    {
+      "id": "update-image-3",
+      "description": "A third abstract image for a case update.",
+      "imageUrl": "https://images.unsplash.com/photo-1589307904488-7d60ff29c975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z2F2ZWx8ZW58MHx8fHwxNzcwNTgzNDI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gavel"
+    }
+  ]
 }
