@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { PublicLayout } from '@/components/layout/public-layout';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { caseUpdates, CaseUpdate } from '@/lib/placeholder-data';
@@ -8,34 +9,39 @@ import { WhatsAppButton } from '@/components/whatsapp-button';
 
 const UpdateCard = ({ update }: { update: CaseUpdate }) => {
     const image = PlaceHolderImages.find(img => img.id === update.imageId);
+    const truncatedContent = update.content.length > 100 
+        ? update.content.substring(0, 100) + '...'
+        : update.content;
 
     return (
-        <Card className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
-            {image && (
-                 <div className="aspect-video overflow-hidden">
-                    <Image
-                        src={image.imageUrl}
-                        alt={update.title}
-                        data-ai-hint={image.imageHint}
-                        width={800}
-                        height={450}
-                        className="w-full h-full object-cover"
-                    />
-                 </div>
-            )}
-            <CardHeader>
-                <CardTitle className="font-headline text-2xl text-primary">{update.title}</CardTitle>
-            </CardHeader>
-            <CardContent className="flex-grow">
-                <p className="text-muted-foreground">{update.content}</p>
-            </CardContent>
-            <CardFooter>
-                 <div className="flex items-center text-sm text-muted-foreground">
-                    <Calendar className="mr-2 h-4 w-4" />
-                    <span>{new Date(update.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-                </div>
-            </CardFooter>
-        </Card>
+        <Link href={`/updates/${update.id}`} className="flex">
+            <Card className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg w-full">
+                {image && (
+                     <div className="aspect-video overflow-hidden">
+                        <Image
+                            src={image.imageUrl}
+                            alt={update.title}
+                            data-ai-hint={image.imageHint}
+                            width={800}
+                            height={450}
+                            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                        />
+                     </div>
+                )}
+                <CardHeader>
+                    <CardTitle className="font-headline text-2xl text-primary">{update.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                    <p className="text-muted-foreground">{truncatedContent}</p>
+                </CardContent>
+                <CardFooter>
+                     <div className="flex items-center text-sm text-muted-foreground">
+                        <Calendar className="mr-2 h-4 w-4" />
+                        <span>{new Date(update.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                    </div>
+                </CardFooter>
+            </Card>
+        </Link>
     )
 }
 
